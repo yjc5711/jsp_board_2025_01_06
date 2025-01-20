@@ -9,3 +9,13 @@ int limit = Integer.parseInt(request.getParameter("limit"));
 <% for(int i = 1; i <= limit; i++) { %>
   <div><%=dan%> * <%=i%> = <%=dan * i%></div>
 <% } %>
+
+
+
+<!-- 방식 1 -->
+<%out.println("<h1>인사</h1>");%>
+<!-- 방식 2 -->
+<%="<h1>인사</h1>"%>
+
+<h1>인사</h1>
+
