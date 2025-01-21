@@ -1,5 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="com.sbs.jsp.board.Rq" %>
 
+<%
+Rq rq = new Rq(request, response);
+
+int dan = rq.getIntAParam("dan", 9);
+int limit = rq.getIntParam("limit", 9);
 <%
 int dan = Integer.parseInt(request.getParameter("dan"));
 int limit = Integer.parseInt(request.getParameter("limit"));
@@ -12,10 +18,4 @@ int limit = Integer.parseInt(request.getParameter("limit"));
 
 
 
-<!-- 방식 1 -->
-<%out.println("<h1>인사</h1>");%>
-<!-- 방식 2 -->
-<%="<h1>인사</h1>"%>
-
-<h1>인사</h1>
 
