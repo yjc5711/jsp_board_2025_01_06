@@ -34,6 +34,10 @@ public class DispatcherServlet extends HttpServlet {
       case "/usr/member/login":
         memberController.showLogin(rq);
         break;
+
+      default:
+        System.out.println("해당 페이지는 존재하지 않습니다.");
+        break;
     }
   }
 }
