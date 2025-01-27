@@ -22,3 +22,6 @@
 0:0:0:0:0:0:0:1 - - [27/Jan/2025:19:20:03 +0900] "GET /usr/article/list/free HTTP/1.1" 500 5953
 0:0:0:0:0:0:0:1 - - [27/Jan/2025:19:20:04 +0900] "GET /usr/article/list/free HTTP/1.1" 500 9193
 0:0:0:0:0:0:0:1 - - [27/Jan/2025:19:20:36 +0900] "GET /usr/article/list/free HTTP/1.1" 200 114
+0:0:0:0:0:0:0:1 - - [27/Jan/2025:19:26:47 +0900] "GET /usr/article/write/free HTTP/1.1" 200 31
+0:0:0:0:0:0:0:1 - - [27/Jan/2025:19:34:53 +0900] "GET /usr/article/write/free HTTP/1.1" 200 510
+0:0:0:0:0:0:0:1 - - [27/Jan/2025:19:34:57 +0900] "GET /usr/article/write/free?title=asdf&body=adfa HTTP/1.1" 200 510
