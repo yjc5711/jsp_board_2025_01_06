@@ -2,8 +2,29 @@
 
 
 <h1>게시물 작성</h1>
+<script>
+  function ArticleSave__submitForm(form){
+      form.title.value = form.title.value.trim();
 
-<form>
+      if(form.title.value.length == 0){
+          alert('제목를 입력해주세요.');
+          form.title.focus();
+          return;
+      }
+
+      form.body.value = form.body.value.trim();
+
+      if(form.body.value.length == 0){
+          alert('내용를 입력해주세요.');
+          form.title.focus();
+          return;
+      }
+
+      form.submit();
+  }
+</script>
+
+<form onsubmit="ArticleSave__submitForm(this); return false">
   <div>
     <span>제목</span>
     <div>
